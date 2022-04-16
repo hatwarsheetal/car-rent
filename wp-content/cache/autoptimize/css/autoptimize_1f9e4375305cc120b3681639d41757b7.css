@@ -35466,11 +35466,11 @@ hr,
 }
 
 .fl-mega-menu ul li.current-menu-item>a {
-    color: #d01818
+    color: #000;
 }
 
 .fl--header .nav-menu li a:hover {
-    color: #d01818
+    color: #000;
 }
 
 .fl-top-header-content .info-container .left-top-header-content .header-sidebar a:hover {
