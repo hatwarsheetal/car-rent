@@ -8,6 +8,7 @@
     <link media="all" href="wp-content/cache/autoptimize/css/autoptimize_1f9e4375305cc120b3681639d41757b7.css" rel="stylesheet" />
     <link media="screen,  all" href="wp-content/cache/autoptimize/css/autoptimize_c02bc018cf7360851d836174d1c90958.css" rel="stylesheet" />
     <title>Revus &#8211; Automotive WordPress Template</title>
+    <base href="/">
     <link rel='dns-prefetch' href='http://maps.googleapis.com/' />
     <link rel='dns-prefetch' href='http://s.w.org/' />
     <link href='http://fonts.gstatic.com/' crossorigin rel='preconnect' />
@@ -79,7 +80,7 @@
                                 <div class="header-sidebar">
                                     <div id="custom_html-3" class="widget_text widget widget_custom_html">
                                         <div class="textwidget custom-html-widget">
-                                            <a href="javascript:" class="header-btn fl-font-style-lighter-than"> <i class="material-icons">shopping_cart
+                                            <a href="#sale" class="header-btn fl-font-style-lighter-than"> <i class="material-icons">shopping_cart
                                             </i> Sale your car </a>
                                         </div>
                                     </div>
@@ -245,238 +246,97 @@
                                                         <div class="fl-vc-vehicle-search fl-animated-item-velocity" data-animate-type="slideRightBigIn">
 
                                                             <form action="https://revus.templines.org/vehicle-listings" method="get" id="findCarNowForm">
-                                                                <div class="vc-auto-search">
 
 
 
-                                                                    <div class="select select_mod-a jelect pixad-makes-models-select">
-                                                                        <div class="home-search-label fl-font-style-semi-bolt">Select Make</div>
-                                                                        <input data-type="jelect" data-field="make" id="ajax-make" name="make" value="" data-text="imagemin" type="text" class="jelect-input">
-                                                                        <div tabindex="0" role="button" class="jelect-current">All Makes</div>
-                                                                        <ul class="jelect-options">
-                                                                            <li data-val="" class="jelect-option jelect-option_state_active">All Makes</li>
-                                                                            <li data-val="audi" class="jelect-option ">Audi</li>
-                                                                            <li data-val="bentley" class="jelect-option ">BENTLEY</li>
-                                                                            <li data-val="bmw" class="jelect-option ">BMW</li>
-                                                                            <li data-val="dodge" class="jelect-option ">DODGE</li>
-                                                                            <li data-val="ferrari" class="jelect-option ">FERRARI</li>
-                                                                            <li data-val="ford" class="jelect-option ">Ford</li>
-                                                                            <li data-val="jaguar" class="jelect-option ">Jaguar</li>
-                                                                            <li data-val="lamborghini" class="jelect-option ">Lamborghini</li>
-                                                                            <li data-val="land-rover" class="jelect-option ">LAND ROVER</li>
-                                                                            <li data-val="lexus" class="jelect-option ">LEXUS</li>
-                                                                            <li data-val="mercedes-benz" class="jelect-option ">MERCEDES-BENZ</li>
-                                                                            <li data-val="peugeot" class="jelect-option ">Peugeot</li>
-                                                                            <li data-val="telsa" class="jelect-option ">Telsa</li>
-                                                                        </ul>
 
 
+                                                                <div class="card" style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                                                                    transition: 0.3s;
+                                                                    width: 100%;">
 
+                                                                    <div class="container" style="text-align:center">
+                                                                        <p style="color:#d01818;font-size: 19px;"><b>Search Car for your Ride</b></p>
 
 
-                                                                    </div>
 
-                                                                    <div class="select select_mod-a jelect">
-                                                                        <div class="home-search-label fl-font-style-semi-bolt">Select a Model</div>
-                                                                        <input data-type="jelect" data-field="model" id="pixad-model" name="model" value="" data-text="imagemin" type="text" class="jelect-input">
-                                                                        <input type="hidden" class="pixad-model-default-hidden" value="All Models">
-                                                                        <div tabindex="0" role="button" class="jelect-current pixad-model">All Models</div>
-                                                                        <ul class="jelect-options pixad-model">
-                                                                            <li data-val="" class="jelect-option jelect-option_state_active">All Models</li>
 
-                                                                        </ul>
-                                                                    </div>
+                                                                        <div class="select select_mod-a jelect pixad-makes-models-select">
 
+                                                                            <div class="home-search-label fl-font-style-semi-bolt">Select City</div>
+                                                                            <input data-type="jelect" data-field="make" id="ajax-make" name="make" value="" data-text="imagemin" type="text" class="jelect-input">
+                                                                            <!-- <div tabindex="0" role="button" class="jelect-current">All Makes</div> -->
+                                                                            <select id="issueinput5" name="priority" class="form-control" formControlName="pcategory" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Priority">
+                                                                                <option value="">RAIPUR</option>
+                                                                                <option value="">DURG</option>
+                                                                                <option value="">BHILAI</option>
+                                                                                <!-- <option [value]="category" *ngFor="let category of pcategories">{{category}}</option> -->
+                                                                                
+                                                                              
+                                                                            </select>
 
 
 
 
 
-
-
-
-                                                                    <div class="select select_mod-a jelect">
-                                                                        <div class="home-search-label fl-font-style-semi-bolt">Fuel Type</div>
-                                                                        <input data-type="jelect" data-field="fuel" id="pixad-fuel" name="fuel" value="" data-text="imagemin" type="text" class="jelect-input">
-                                                                        <div tabindex="0" role="button" class="jelect-current">All Fuel Types</div>
-                                                                        <ul class="jelect-options">
-                                                                            <li data-val="" class="jelect-option jelect-option_state_active">All Fuel Types</li>
-                                                                            <li data-val="petrol" class="jelect-option">Petrol</li>
-                                                                            <li data-val="diesel" class="jelect-option">Diesel</li>
-                                                                            <li data-val="hybrid" class="jelect-option">Hybrid</li>
-                                                                            <li data-val="electric" class="jelect-option">Electric</li>
-                                                                            <li data-val="petrol+cng" class="jelect-option">Petrol+CNG</li>
-                                                                            <li data-val="lpg" class="jelect-option">LPG</li>
-                                                                        </ul>
-
-
-                                                                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                    <div class="btn">
-                                                                        <div class="btn-filter wrap__btn-skew-r js-filter button-container">
-                                                                            <button type="button" onclick="findCarNowVc()" class="fl-button primary-button"><span class="btn-skew-r__inner">Search</span></button>
 
                                                                         </div>
-                                                                    </div>
 
+                                                                        <div class="select select_mod-a jelect">
+                                                                            <div class="home-search-label fl-font-style-semi-bolt">Pick up date</div>
+
+                                                                            <div class="position-relative">
+                                                                                <input type="date" id="timesheetinput3" formControlName="date" class="form-control" name="date">
+
+                                                                            </div>
+
+
+                                                                        </div>
+
+                                                                        <div class="select select_mod-a jelect">
+                                                                            <div class="home-search-label fl-font-style-semi-bolt">Pickup time</div>
+
+                                                                            <div class="position-relative">
+                                                                                <input type="time" id="timesheetinput3" formControlName="date" class="form-control" name="date">
+
+                                                                            </div>
+
+
+                                                                        </div>
+
+
+                                                                        <div class="select select_mod-a jelect">
+                                                                            <div class="home-search-label fl-font-style-semi-bolt">Drop date</div>
+
+                                                                            <div class="position-relative">
+                                                                                <input type="date" id="timesheetinput3" formControlName="date" class="form-control" name="date">
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="select select_mod-a jelect">
+                                                                            <div class="home-search-label fl-font-style-semi-bolt">Pickup time</div>
+
+                                                                            <div class="position-relative">
+                                                                                <input type="time" id="timesheetinput3" formControlName="date" class="form-control" name="date">
+
+                                                                            </div>
+
+
+                                                                        </div>
+
+
+
+
+
+                                                                        <div class="btn">
+                                                                            <div class="btn-filter wrap__btn-skew-r js-filter button-container">
+                                                                                <button type="button" onclick="findCarNowVc()" class="fl-button primary-button"><span class="btn-skew-r__inner">Search Car</span></button>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
                                                                 </div>
                                                             </form>
 
@@ -1946,7 +1806,8 @@
                                                                 <div class="testimonial-slide">
                                                                     <div class="top-slider-content">
                                                                         <div class="text-content">Moving grass saw the spirit creature every very won't also given have forth cattle kind sea unto be firmament night for also living created make so have, dominion, seed herb fifth
-                                                                            night given.</div>
+                                                                            night given.
+                                                                        </div>
                                                                     </div>
                                                                     <div class="bottom-content">
                                                                         <div class="bottom-entry-content">
@@ -2168,7 +2029,7 @@
                 </div>
             </div>
         </div>
-        <footer class="fl--footer style-three-column">
+        <footer class="fl--footer style-three-column" id="sale">
             <div class="top-content-footer">
                 <div class="container footer-logotype-social-section text-center">
                     <div class="footer-logotype">
