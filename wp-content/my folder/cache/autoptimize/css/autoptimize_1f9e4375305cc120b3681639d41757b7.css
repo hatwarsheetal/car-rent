@@ -35478,7 +35478,7 @@ hr,
 }
 
 .fl-top-header-content .info-container .right-top-header-content .header-btn:before {
-    background-color: #000000;
+    background-color: #9b9595;
 }
 
 .fl-top-header-content .info-container:after {
@@ -36983,8 +36983,8 @@ form.checkout #order_review #payment .place-order button:hover {
 }
 
 .fl-fancy-text-content-vc .fl-fancy-text-container {
-    max-width: 1000px;
-    width: 80%;
+    max-width: 1430px;
+    width: 100%;
     margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
